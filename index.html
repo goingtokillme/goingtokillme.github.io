@@ -100,14 +100,17 @@
           dr = 0.02;
         }
 
+        var aliveMessages = Array("DON'T LEAVE THE HOUSE !!!", "Time to check if that hazmat suit still fits", "Start digging ...", "Time to max out that overdraft");
+        var deadMessages = Array("You will probably be fine, but maybe start stockpiling on some rice", "Good chances to live, but you can never have enough toilet roll.", "This surgical mask will go beautifully with some swim goggles");
+
         roll = Math.random();
         if (roll < dr) {
-          message = "ded";
+          message = aliveMessages[Math.floor(Math.random() * aliveMessages.length)]
         } else {
-          message = "lucky boy";
+          message = deadMessages[Math.floor(Math.random() * deadMessages.length)]
         }
 
-        document.getElementById("findOut-message").innerHTML = message + " :: " + roll + " :: " + dr;
+        document.getElementById("findOut-message").innerHTML = message;
       }
     </script>
   
