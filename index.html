@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+
+    <script data-ad-client="ca-pub-9903869594567688" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script type="text/javascript">
+      window._mNHandle = window._mNHandle || {};
+      window._mNHandle.queue = window._mNHandle.queue || [];
+      medianet_versionId = "3121199";
+    </script>
+    <script src="https://contextual.media.net/dmedianet.js?cid=8CU88SD7Y" async="async"></script>
+
+    <title> Is It Going to Kill Me ?!</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="https://goingtokill.me"> Home </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"> Other Things </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 text-center">
+      <div class="container">
+        <h1 class="mt-5"> Is <code>Coronavirus</code> Going To Kill Me ?! </h1>
+        <br>
+
+        <form>
+          <div class="form-group row">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Age</span>
+                    </div>
+                    <input id="findOut-age" type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                </div>
+                <div class="col-sm"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+        <button type="button" class="btn btn-danger" onclick="findOut()">Find out</button>
+
+      </div>
+
+      <br>
+      <h1 id="findOut-message"></h1>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script>
+      function findOut() {
+        age = document.getElementById("findOut-age").value;
+        if(age>80){
+          dr = 0.18;
+        }
+        if(age<=80 && age>70){
+          dr = 0.12;
+        }
+        if(age<=70 && age>60){
+          dr = 0.07;
+        }
+        if(age<=60 && age>50){
+          dr = 0.04;
+        }
+        if(age<=50 && age>40){
+          dr = 0.03;
+        }
+        if(age<=40){
+          dr = 0.02;
+        }
+
+        roll = Math.random();
+        if (roll < dr) {
+          message = "ded";
+        } else {
+          message = "lucky boy";
+        }
+
+        document.getElementById("findOut-message").innerHTML = message + " :: " + roll + " :: " + dr;
+      }
+    </script>
+  
+    <div id="752784467">
+      <script type="text/javascript">
+          try {
+              window._mNHandle.queue.push(function (){
+                  window._mNDetails.loadTag("752784467", "728x90", "752784467");
+              });
+          }
+          catch (error) {}
+      </script>
+    </div>
+  </body>
+</html>
